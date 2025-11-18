@@ -1,0 +1,11 @@
+public class EvenOddCheck {
+    public static void main(String[] args) {
+        int number = 10; // You can change this value for testing
+
+        // Using bitwise AND operator to check the least significant bit
+        if ((number & 1) == 0) {
+            System.out.println(number + " is even");
+        } else {
+            System.out.println(number + " is odd");
+        }
+    }
