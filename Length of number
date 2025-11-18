@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class NumberLength {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        long number = sc.nextLong();  // Using long for large numbers
+
+        number = Math.abs(number);  // Make sure it's positive
+
+        if (number == 0) {
+            System.out.println("Length of the number is: 1");
+        } else {
+            int length = 0;
+            while (number > 0) {
+                number /= 10;
+                length++;
+            }
+            System.out.println("Length of the number is: " + length);
+        }
+    }
+}
