@@ -1,0 +1,16 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        System.out.println("enter number");
+        Scanner sc=new Scanner(System.in);
+        int a= sc.nextInt();
+        int i=0;
+        do{
+            i++;
+            
+            if(i%2==0){
+                System.out.println(i);
+            }
+        }while(i<=a);
+    }
+}
